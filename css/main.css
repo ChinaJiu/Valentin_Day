@@ -1,0 +1,94 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,section,canvas {
+    padding: 0;
+    margin: 0;
+}
+li{ list-style: none;}
+@font-face
+{
+    font-family: Agnes;
+    src: url(../images/agnes-regular.ttf);
+}
+html,body {
+    font-size: 22px;
+    color: white;
+    /*font-family: 'Microsoft YaHei', Arial;*/
+    font-family: 'STKaiti';
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    /*-webkit-touch-callout:none; /!* 禁用长触弹出的下载图片菜单 *!/*/
+    -webkit-user-select:none; /* 禁用长触选择文字等功能 */
+}
+
+.hide{ display: none;}
+
+.loading{ position: absolute; top: 0; left: 0; width: 100%; height:100%;background: url("") no-repeat center center;}
+.loading>div{position: relative; top: 50%; left: 50%;}
+.loadingtxt{margin: 10px 0 0 -55px;font-size:24px;width:100px;height:30px;line-height: 30px; color: white;text-align: center; }
+
+.main{ width: 100%; height: 100%;position: relative; overflow: hidden;}
+.page{ width: 100%; height: 100%;  position: relative;}
+.page>div{ position: absolute; overflow: hidden; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center center;}
+.page .page1{background-color: white;}
+.page1>div{ position: absolute; top: 50%; left: 50%;}
+.p1-1{margin: -520px 0 0 -320px}
+.p1-2{margin: -520px 0 0 -27px}
+.p1-3{margin: -492px 0 0 -300px}
+.p1-4{margin: -357px 0 0 -290px}
+.p1-5{margin: -325px 0 0 -290px}
+.p1-6{margin: -298px 0 0 -290px}
+/*.p1-7{margin: -300px 0 0 -3px}*/
+/*.p1-8{margin: -318px 0 0 55px}*/
+.p1-9{margin: -64px 0 0 -54px}
+.p1-10{margin: -30px 0 0 -112px}
+.p1-11{margin: 4px 0 0 -136px}
+.p1-12{margin: 38px 0 0 -100px}
+.p1-13{margin: 78px 0 0 -70px}
+.p1-14{margin: 290px 0 0 88px}
+.s-span1{margin: -279px 0 0 -290px; transform: rotate(-10deg); width: 400px; height: 200px; }
+.txt {
+    font-family: Agnes;
+    font-size: 65px;
+    display: inline;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.t-text1,.t-text2{width: 250px;height: 70px;margin: 150px 0 0 -125px;  overflow: hidden;}
+.t-text2>div>div{position: relative; overflow: hidden; width: 250px; height: 70px;color: black;text-align: center;line-height: 32px;}
+#t-word1{font-size: 20px; text-align: center;width: 100%;height: 100%;border: none;background: url("../images/p1-16.png") no-repeat center 37px}
+.bt1{margin: 260px 0 0 -74px}
+.bt2{margin: 325px 0 0 -74px}
+.bt3{margin: 386px 0 0 -74px}
+span{border-bottom: 1px solid black;}
+
+.page .page2{background: url("../images/bg2.jpg") no-repeat center center;}
+.page2>div{ position: absolute; top: 50%; left: 50%;}
+.box2-1,.box2-2{width: 321px; height: 321px; margin: -237px 0 0 -162px;font-size: 50px; }
+.box2-1>div,.box2-2>div{position: absolute;}
+.f-1,.f-2{position:absolute; font-size: 50px;word-break:keep-all; height: 45px;color: #d80713; line-height: 45px;}
+
+.x-1{!important;}
+.p-name{text-align: center;position: relative;top:240px;}
+.p1-15{margin: -100px 0 0 -135px;}
+.img-1{position: absolute; top:0;left:0;z-index: 99999}
+/*音乐按钮*/
+.musicicon{ background: url("../images/musicicon.png") no-repeat; width: 42px; height: 43px; position: absolute; top: 20px; right: 20px;}
+
+/*音乐按钮旋转*/
+.musicrotate{-webkit-animation: xuanzhuan 5s infinite linear; animation: xuanzhuan 5s infinite linear;}
+@keyframes xuanzhuan {
+    0% { transform: rotate(0deg)}
+    100% { transform: rotate(360deg)}
+}
+@-webkit-keyframes xuanzhuan {
+    0% { -webkit-transform: rotate(0deg)}
+    100% { -webkit-transform: rotate(360deg)}
+}
+/*音乐按钮旋转*/
+
+
+
